@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: beige;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-menu {
+    &>ul {
+        display: flex;
+        list-style: none;
+        gap: 50px;
+        padding: 20px;
+        font-weight: bold;
+
+        &>li {
+            cursor: pointer;
+            padding: 2px 4px;
+        }
+
+        &>li:hover {
+            background-color: rgba(165, 42, 42, 0.539);
+            border-radius: 8px;
+
+        }
+
+    }
+
+    height: 40vh;
+    width: 100vw;
+    background-image: url(https://i.pinimg.com/736x/e1/c2/3a/e1c23ac34847740f672717c89a62ae37.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-family: "Playwrite CU", cursive;
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.search {
+    position: relative;
+
+    &>input {
+        position: absolute;
+        left: 500px;
+        width: 500px;
+        padding: 5px 10px;
+        border-radius: 20px;
+        outline: none;
+        border: 1px solid rgb(227, 184, 119);
+        background-color: beige
+    }
+
+    &>input:focus {
+        border: 2px solid brown;
+    }
+
+    &>button {
+        position: relative;
+        left: 1010px;
+        bottom: 2px;
+        padding: 1px 4px;
+        border-radius: 20px;
+        cursor: pointer;
+
+        &>img {
+            position: relative;
+            top: 2px;
+        }
+    }
+}
+
+.c {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.coffee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;;
+
+    & > img:hover{
+    box-shadow: 0px 8px 8px black;
+    cursor: pointer;
+    
+    }
+}
+
+.cont{
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px 40px;
+    border-radius: 20px;
+    width: 80vw;
+    background-color: bisque
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+ol{
+    margin-left: 20px;
+}
+
+h3{
+    text-decoration: underline;
+}
